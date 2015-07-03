@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>fermads.com</title>
+  <title>FERMADS</title>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
   <style type="text/css">
   body {background-color:#333;
-    background-image: url(me.jpsg);
-    background-repeat: no-repeat;
     margin: 0;
     overflow: hidden;
   }
+
+/*  .test {
+    width: 3000px;
+    height: 3000px;
+    top: 0;
+    display: block;
+    position: absolute;
+  text-align: left;
+  right: 0px;
+  left: 0px;
+  bottom: 5px;
+
+  background: #000;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  z-index: 1;
+
+
+  }*/
 
   h4 {
     color: black;
@@ -27,8 +44,8 @@
     color: #eee;
     z-index: 10;
     position: relative;
-    text-shadow: 0px 0px 10px black;
-    margin-top: 76px;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px 1px 2px black;
+    margin-top: 216px;
     letter-spacing: 4px;
   }
 
@@ -48,12 +65,12 @@
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .around.a5 {
     position: absolute;
-    top: -440px;
+    top: -270px;
     left: 50%;
     border:200px solid #3a3a3a;
     width: 1000px;
@@ -85,7 +102,9 @@
   height: 100px;
   margin-left: 10px;
   border-radius: 1000px;
-  margin-top: 10px
+  margin-top: 10px;
+  z-index:1000;
+  position: relative;
 }
 
   .around.a2 {
@@ -93,18 +112,62 @@
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .links {
     text-align: center;
-    margin-top: 400px;
+    position: relative;
+    margin-top: 260px;
     z-index:1000;
   }
 
+  .links a {
+    background-color: black;
+    border-radius: 8px;
+    display: inline-block;
+    opacity: 0.7;
+    margin: 4px;
+
+  }
+
+  .links a:hover {
+    opacity: 1;
+  }
+  .links img {
+    width: 80px;
+    border-radius: 4px;
+  }
+
+  h1 strong {
+     font-size: 110%
+  }
+
+  .cover {
+    width: 30%;height:100%;
+    background-color: black;
+    position: absolute;
+    border-right: 1px solid gray;
+    opacity: 0.77;
+    top: 0;
+    z-index: 100;
+  }
+
+  .cover2 {
+    width: 30%;height:100%;
+    background-color: black;
+    position: absolute;
+    border-left: 1px solid gray;
+    opacity: 0.77;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
   </style>
 </head>
 <body>
+  <div class="cover"></div>
+  <div class="cover2"></div>
   <div class="around a5">
     <div class="around a4">
       <div class="around a3">
@@ -117,13 +180,13 @@
     </div>
   </div>
 
-  <h1>fermads</h1>
+  <h1>FER<strong>M</strong>ADS</h1>
 
   <div class="links">
-    <a href="https://br.linkedin.com/in/fermads"><img src="linkedin-64-black.png"></a>
-    <a href="https://telegram.me/fermads"><img src="telegram-128.png" style="width: 64px"></a>
-    <a href="https://github.com/fermads/"><img src="github-64-black.png"></a>
-    <a href="" id="masked-mail"><img src="gmail-64-black.png"></a>
+    <a href="https://br.linkedin.com/in/fermads"><img src="linkedin-128.png"></a>
+    <a href="https://telegram.me/fermads"><img src="telegram-128.png"></a>
+    <a href="https://github.com/fermads/"><img src="github-128.png"></a>
+    <a href="" id="masked-mail"><img src="gmail-128.png"></a>
   </div>
   <!--
   F e r M A d S
@@ -135,5 +198,6 @@
   photo
   videos and slides of talks
   -->
+  <div class="test"></div>
 </body>
 </html>
