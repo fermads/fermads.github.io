@@ -2,207 +2,29 @@
 <html>
 <head>
   <title>FERMADS</title>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
-  <style type="text/css">
-  body {background-color:#333;
-    margin: 0;
-    overflow: hidden;
-  }
-
-/*  .test {
-    width: 3000px;
-    height: 3000px;
-    top: 0;
-    display: block;
-    position: absolute;
-  text-align: left;
-  right: 0px;
-  left: 0px;
-  bottom: 5px;
-
-  background: #000;
-  background: rgba(0,0,0,0.4);
-  position: absolute;
-  z-index: 1;
-
-
-  }*/
-
-  h4 {
-    color: black;
-    text-decoration: none;
-    font-family: arial,sans-serif;
-    font-weight: normal;
-    color: #ddd;
-    font-size: 12px;
-  }
-
-  h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: #eee;
-    z-index: 10;
-    position: relative;
-    text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px 1px 2px black;
-    margin-top: 216px;
-    letter-spacing: 4px;
-  }
-
-  #bg {
-    border-radius: 1000px;
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    border: 0px solid #555;
-  }
-  .around {
-    border-radius: 1000px;
-  }
-
-  .around.a1 {
-    border: 3px solid black;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  .around.a5 {
-    position: absolute;
-    top: -270px;
-    left: 50%;
-    border:200px solid #3a3a3a;
-    width: 1000px;
-    height: 1000px;
-    margin-left: -700px;
-    border-radius: 1000px;
-  }
-
-  .around.a3 {
-    border: 40px solid #444;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 140px;
-  }
-
-
-  .around.a4 {
-    border: 60px solid #222;
-    width: 800px;
-    height: 800px;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-
-#me {
-  border: 15px solid #222;
-  width: 100px;
-  height: 100px;
-  margin-left: 10px;
-  border-radius: 1000px;
-  margin-top: 10px;
-  z-index:1000;
-  position: relative;
-}
-
-  .around.a2 {
-    border: 20px solid #777;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 80px;
-  }
-
-  .links {
-    text-align: center;
-    position: relative;
-    margin-top: 260px;
-    z-index:1000;
-  }
-
-  .links a {
-    background-color: black;
-    border-radius: 4px;
-    display: inline-block;
-    opacity: 0.7;
-    margin: 4px;
-    height: 80px;
-  }
-
-  .links a:hover {
-    opacity: 1;
-  }
-  .links img {
-    width: 80px;
-    border-radius: 4px;
-  }
-
-  h1 strong {
-     font-size: 110%
-  }
-
-  .cover {
-    width: 30%;height:100%;
-    background-color: black;
-    position: absolute;
-    border-right: 1px solid gray;
-    opacity: 0.77;
-    top: 0;
-    z-index: 100;
-  }
-
-  .cover2 {
-    width: 30%;height:100%;
-    background-color: black;
-    position: absolute;
-    border-left: 1px solid gray;
-    opacity: 0.77;
-    top: 0;
-    right: 0;
-    z-index: 100;
-  }
-  </style>
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet" type="text/css">
+  <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="cover"></div>
-  <div class="cover2"></div>
-  <div class="around a5">
-    <div class="around a4">
-      <div class="around a3">
-        <div class="around a2">
-          <div class="around a1">
-            <img src="me2.jpg" id="me">
-          </div>
-        </div>
+
+  <div class="around a3">
+    <div class="around a2">
+      <div class="around a1">
       </div>
     </div>
   </div>
 
   <h1>FER<strong>M</strong>ADS</h1>
 
-  <div class="links">
-    <a href="https://br.linkedin.com/in/fermads"><img src="linkedin-128.png"></a>
-    <a href="https://telegram.me/fermads"><img src="telegram-128.png"></a>
-    <a href="https://github.com/fermads/"><img src="github-128.png"></a>
-    <a href="" id="masked-mail"><img src="gmail-128.png"></a>
-  </div>
-  <!--
-  F e r M A d S
-  fernando missalli
+  <img src="img/fermads.jpg" id="me">
 
-  gtalk  email | telegram | linkedin | github | npm
-  list of projects?
-  curric?
-  photo
-  videos and slides of talks
-  -->
-  <script>
-  var me = document.getElementById('masked-mail');
-  me.addEventListener('mouseover', function() {
-    me.setAttribute('href', 'mailto:fermads?'.replace('?', '@gmail.com'))
-  })
-  </script>
+  <div class="links">
+    <a href="https://br.linkedin.com/in/fermads"><img src="img/linkedin-128.png"></a>
+    <a href="https://telegram.me/fermads"><img src="img/telegram-128.png"></a>
+    <a href="https://github.com/fermads"><img src="img/github-128.png"></a>
+    <a href="" id="masked-mail"><img src="img/gmail-128.png"></a>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>

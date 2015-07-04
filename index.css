@@ -1,0 +1,87 @@
+body {
+  background-color:#333;
+  margin: 0;
+  overflow: hidden;
+  background-image: linear-gradient(#555, #333);
+  background-repeat: repeat-x;
+  height: 1100px
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 216px;
+  margin-bottom: 54px;
+  letter-spacing: 4px;
+  position: relative;
+  height: 68px;
+}
+
+h1 strong {
+   font-size: 110%
+}
+
+.around {
+  border-radius: 1000px;
+  margin: 0 auto;
+}
+
+.around.a1 {
+  border: 3px dotted rgb(0, 148, 30);
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.around.a2 {
+  border: 20px solid #333;
+  width: 200px;
+  height: 200px;
+  margin-top: 80px;
+}
+
+.around.a3 {
+  position: absolute;
+  left: 50%;
+  margin-left: -240px;
+  border: 40px solid #444;
+  width: 400px;
+  height: 400px;
+  top: 170px;
+}
+
+#me {
+  border: 10px solid #000;
+  width: 120px;
+  height: 120px;
+  border-radius: 1000px;
+  margin:0 auto;
+  display: block;
+}
+
+.links {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.links a {
+  transition: all 0.5s ease;
+  background-color: black;
+  border-radius: 4px;
+  display: inline-block;
+  opacity: 0.6;
+  margin: 4px;
+  height: 80px;
+  width: 80px;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.links img {
+  width: 80px;
+  height: 80px;
+}
