@@ -57,7 +57,7 @@ h1 strong {
   width: 120px;
   height: 120px;
   border-radius: 1000px;
-  margin:0 auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -87,7 +87,9 @@ h1 strong {
   height: 80px;
 }
 
-hr {display: none;}
+hr {
+  display: none;
+}
 
 @media (max-height:800px){
   .around.a3 {
