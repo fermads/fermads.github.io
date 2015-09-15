@@ -1,22 +1,27 @@
+
 body {
   background-color:#333;
-  margin: 0;
-  overflow: hidden;
   background-image: linear-gradient(#555, #333);
   background-repeat: repeat-x;
-  height: 1100px
+  margin: 0;
+  overflow: hidden;
+  min-height: 1100px;
 }
 
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', serif, sans-serif;
   font-size: 50px;
   text-align: center;
   color: white;
-  margin-top: 216px;
+  margin-top: 26px;
   margin-bottom: 54px;
   letter-spacing: 4px;
-  position: relative;
   height: 68px;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  display: block;
+  width: 100%;
 }
 
 h1 strong {
@@ -43,13 +48,13 @@ h1 strong {
 }
 
 .around.a3 {
-  position: absolute;
+  position: relative;
   left: 50%;
   margin-left: -240px;
   border: 40px solid #444;
   width: 400px;
   height: 400px;
-  top: 170px;
+  margin-top: 100px;
 }
 
 #me {
@@ -59,11 +64,14 @@ h1 strong {
   border-radius: 1000px;
   margin: 0 auto;
   display: block;
+  position: absolute;
+  top: 128px;
+  left: 130px;
 }
 
 .links {
   text-align: center;
-  margin-top: 60px;
+  margin-top: -110px;
   position: relative;
 }
 
@@ -88,23 +96,76 @@ h1 strong {
 }
 
 hr {
-  display: none;
+  height: 0;
+  margin: 2px;
+  padding: 0;
+  border: none;
+}
+
+.youtube-embed {
+  display: block;
+  margin: 20px auto;
+  padding-top: 100px
+}
+
+.speakerdeck-embed {
+  display: block;
+  margin: 20px auto;
+  padding-top: 100px;
+  border:1px solid red;
+}
+
+.timeline {
+  list-style: none;
+  font-family: consolas, monaco, sourcecode, courier,monospace;
+  font-size: 16px;
+  width:400px;
+  margin:30px auto;
+  padding: 0 10px;
+}
+
+.timeline li .date {
+  margin-right: 10px;
+  color:#555;
+}
+
+.timeline li {
+  color: #999;
+  padding: 20px 0;
+  border-top: 1px dashed #555;
+}
+
+.timeline li strong {
+  font-family: sans-serif;
+  font-size: 20px
+}
+
+.timeline a {
+  color: rgb(0, 148, 30);
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #eee;
+  margin: 30px auto 0 auto;
+  cursor: pointer;
+}
+
+.arrow-down:hover {
+  transition: all 0.5s ease;
+  border-top-color: rgb(0, 148, 30);
 }
 
 @media (max-height:800px){
   .around.a3 {
-    top:20px;
+    margin-top: 10px;
   }
-  h1 {
-    margin-top: 66px;
-  }
+
 }
 
 @media (max-width:420px) {
-  hr {
-    display: block;
-    margin: 0;
-    padding: 0;
-    visibility: hidden;
-  }
+
 }
