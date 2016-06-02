@@ -1,5 +1,0 @@
-{
-    "quotmark"      : "single",    // Quotation mark consistency:
-    "globalstrict"  : true,
-    "browser"       : true     // Web Browser (window, document, etc)
-}
